@@ -1,7 +1,4 @@
 discord 
 pyjokes
 requests
-json
-randome
-time
 dadjokes
