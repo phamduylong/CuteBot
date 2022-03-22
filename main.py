@@ -4,6 +4,7 @@ import requests
 import json
 import random
 import time
+import os
 from dadjokes import Dadjoke
 
 
@@ -49,6 +50,7 @@ sad_bot = ["Okay 🤐🤐", "Did I say something wrong 😥 I'm sorry", "Fine. Y
 
 client = discord.Client()
 
+oma_link = "https://oma.metropolia.fi/"
 
 @client.event
 async def on_ready():
@@ -139,5 +141,18 @@ async def on_message(message):
     if msg.find("┬─┬ ノ( ゜-゜ノ)") != -1:
         await message.channel.send("(╯°□°）╯︵ ┻━┻")
 
+    if msg.startswith("/oma"):
+        await message.channel.send("https://oma.metropolia.fi/")
+
+    if msg.startswith("/github"):
+        await message.channel.send("https://github.com/")
+
+    if msg.startswith("/robot"):
+        await message.channel.send("https://robotframework.org/")
+
+    if msg.startswith("/owner"):
+        await message.channel.send("https://linktr.ee/longph")
+
+
 # client token
-client.run("ODIzODQxNjc5MjU3NzYzODQx.YFmsWg.K_tnCmJjtdUg1N7TZxJYLigGTpo")
+client.run(os.environ['TOKEN'])
