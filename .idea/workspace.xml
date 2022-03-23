@@ -1,8 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7cad85d-abf6-4383-8881-7cd5c5418c7b" name="Default Changelist" comment="mod gitignore exclude token config file">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="e7cad85d-abf6-4383-8881-7cd5c5418c7b" name="Default Changelist" comment="mod gitignore exclude workspace xml file">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,10 +41,6 @@
       <module name="Discord" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-        <env name="TOKEN" value="ODIzODQxNjc5MjU3NzYzODQx.YFmsWg.XVjJxCqXBCG1TvNfWDpbVfGPQGk" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -91,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648053596186</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="mod gitignore exclude workspace xml file">
+      <created>1648053810598</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1648053810598</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -110,6 +112,7 @@
     <MESSAGE value="unused stuff deleted" />
     <MESSAGE value="moved bot token to env file" />
     <MESSAGE value="mod gitignore exclude token config file" />
-    <option name="LAST_COMMIT_MESSAGE" value="mod gitignore exclude token config file" />
+    <MESSAGE value="mod gitignore exclude workspace xml file" />
+    <option name="LAST_COMMIT_MESSAGE" value="mod gitignore exclude workspace xml file" />
   </component>
 </project>
