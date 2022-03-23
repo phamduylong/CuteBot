@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7cad85d-abf6-4383-8881-7cd5c5418c7b" name="Default Changelist" comment="moved bot token to env file">
+    <list default="true" id="e7cad85d-abf6-4383-8881-7cd5c5418c7b" name="Default Changelist" comment="mod gitignore exclude token config file">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -43,6 +43,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
         <env name="TOKEN" value="ODIzODQxNjc5MjU3NzYzODQx.YFmsWg.XVjJxCqXBCG1TvNfWDpbVfGPQGk" />
       </envs>
       <option name="SDK_HOME" value="" />
@@ -83,7 +84,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647941447226</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mod gitignore exclude token config file">
+      <created>1648053596186</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1648053596186</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -101,6 +109,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="unused stuff deleted" />
     <MESSAGE value="moved bot token to env file" />
-    <option name="LAST_COMMIT_MESSAGE" value="moved bot token to env file" />
+    <MESSAGE value="mod gitignore exclude token config file" />
+    <option name="LAST_COMMIT_MESSAGE" value="mod gitignore exclude token config file" />
   </component>
 </project>
