@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e7cad85d-abf6-4383-8881-7cd5c5418c7b" name="Default Changelist" comment="fix import token cfg file">
+    <list default="true" id="e7cad85d-abf6-4383-8881-7cd5c5418c7b" name="Default Changelist" comment="added yt search feature">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
@@ -104,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1648065235322</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="added yt search feature">
+      <created>1648494806880</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1648494806880</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +132,7 @@
     <MESSAGE value="mod gitignore exclude token config file" />
     <MESSAGE value="mod gitignore exclude workspace xml file" />
     <MESSAGE value="fix import token cfg file" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix import token cfg file" />
+    <MESSAGE value="added yt search feature" />
+    <option name="LAST_COMMIT_MESSAGE" value="added yt search feature" />
   </component>
 </project>

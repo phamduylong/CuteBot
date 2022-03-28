@@ -160,11 +160,13 @@ async def on_message(message):
 
     if msg.startswith("/yt"):
         query = msg[4:len(msg)]
-        print(query)
         res = VideosSearch(query, limit=1)
-        print(res.result().get('result')[0].get('link'))
         await message.channel.send(res.result().get('result')[0].get('link')) #get the url of the video
-
+        if message.author.voice:
+            vchannel = message.author.voice.channel
+            await vchannel.connect()
+        else:
+            await message.channel.send("Join a voice channel first mate! Try again and I shall see you there later 😎")
 
 
 # client token
