@@ -96,6 +96,8 @@ async def on_message(message):
             "1 /quote or /inspire me: I can give you an inspiring quote\n"
             "2 /cutebot help: Instructions to be my friend 🤭🤭\n"
             "3 /tell a joke or /joke: Ready for a laugh? Can't wait to tell my joke 😉😉"
+            "4 /yt <query> will return you a YouTube link to the video (with embed video potentially idk)"
+            "5 /oma for a direct link to OMA (what else LOL)"
         )
 
     if msg.startswith('/tell a joke'):
