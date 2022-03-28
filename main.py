@@ -2,15 +2,19 @@ import discord
 import pyjokes
 import requests
 import json
-import random
-import time
 import os
 from dadjokes import Dadjoke
 import token_config
+import random
+from youtubesearchpython import VideosSearch
 
 
 def get_quote():
     response = requests.get("https://zenquotes.io/api/random")
+    #response = requests.get\
+    #(
+    #    'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=txt'
+    #)
     json_data = json.loads(response.text)
     quote = json_data[0]["q"] + " - " + json_data[0]["a"]  # fetching q&a from json format, h ignored
     return quote
@@ -49,9 +53,9 @@ bot_complains = ["I really am a human. I have emotions 😡 Emojis I mean", "Why
 sad_bot = ["Okay 🤐🤐", "Did I say something wrong 😥 I'm sorry", "Fine. You know how to find me 😔",
            "I'm here to talk, but if that is what you want then be it ☹"]
 
+#client = commands.Bot(command_prefix = "/")
 client = discord.Client()
 
-oma_link = "https://oma.metropolia.fi/"
 
 @client.event
 async def on_ready():
@@ -153,6 +157,14 @@ async def on_message(message):
 
     if msg.startswith("/owner"):
         await message.channel.send("https://linktr.ee/longph")
+
+    if msg.startswith("/yt"):
+        query = msg[4:len(msg)]
+        print(query)
+        res = VideosSearch(query, limit=1)
+        print(res.result().get('result')[0].get('link'))
+        await message.channel.send(res.result().get('result')[0].get('link')) #get the url of the video
+
 
 
 # client token
