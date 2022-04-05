@@ -7,6 +7,7 @@ from dadjokes import Dadjoke
 import token_config
 import random
 from youtubesearchpython import VideosSearch
+import time
 
 
 def get_quote():
