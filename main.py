@@ -7,7 +7,6 @@ from dadjokes import Dadjoke
 import token_config
 import random
 from youtubesearchpython import VideosSearch
-import time
 
 
 def get_quote():
@@ -31,17 +30,8 @@ def get_dads_joke():
     return dads_joke.joke
 async def bot_send_quote():
     quote = get_quote()
-
-    if agr == "What if I don't? Whatchu gonna do hooman 😎 I'm not afraid of you":
-        await message.channel.send(agr)
-        time.sleep(2)
-        await message.channel.send("Nah I'm kidding hehe 😁😁. Here ya go:")
-        time.sleep(1)
-        await message.channel.send(quote)
-    else:
-        await message.channel.send(agr)
-        time.sleep(1)
-        await message.channel.send(quote)
+    await message.channel.send(agr)
+    await message.channel.send(quote)
 
 
 agreements = ["OK!", "Sure", "Who wouldn't?", "You got it", "What if I don't? Whatchu gonna do hooman?",
@@ -78,17 +68,8 @@ async def on_message(message):
 
     if msg.startswith("/inspire me") or message.content.startswith('/quote'):
         quote = get_quote()
-
-        if agr == "What if I don't? Whatchu gonna do hooman 😎 I'm not afraid of you":
-            await message.channel.send(agr)
-            time.sleep(2)
-            await message.channel.send("Nah I'm kidding hehe 😁😁. Here ya go:")
-            time.sleep(1)
-            await message.channel.send(quote)
-        else:
-            await message.channel.send(agr)
-            time.sleep(1)
-            await message.channel.send(quote)
+        await message.channel.send(agr)
+        await message.channel.send(quote)
 
     if msg.startswith('/cutebot help'):
         await message.channel.send(
@@ -105,27 +86,13 @@ async def on_message(message):
 
     if msg.startswith('/tell a joke'):
         joke = get_joke()
-        if agr == "What if I don't? Whatchu gonna do hooman?":
-            time.sleep(2)
-            await message.channel.send("Nah I'm kidding hehe 😁😁. Here ya go:")
-            time.sleep(1)
-            await message.channel.send(joke)
-        else:
-            await message.channel.send(agr)
-            time.sleep(1)
-            await message.channel.send(joke)
+        await message.channel.send(agr)
+        await message.channel.send(joke)
 
     if msg.startswith('/joke'):
         dads_joke = get_dads_joke()
-        if agr == "What if I don't? Whatchu gonna do hooman 🤔 I'm not afraid of you 😎":
-            time.sleep(2)
-            await message.channel.send("Nah I'm kidding hehe 😁😁. Here ya go:")
-            time.sleep(1)
-            await message.channel.send(dads_joke)
-        else:
-            await message.channel.send(agr)
-            time.sleep(1)
-            await message.channel.send(dads_joke)
+        await message.channel.send(agr)
+        await message.channel.send(dads_joke)
 
     if msg.find('not') != -1 and msg.find("human") != -1:
         await message.channel.send(random.choice(bot_complains))
