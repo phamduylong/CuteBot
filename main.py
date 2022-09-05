@@ -11,10 +11,6 @@ from youtubesearchpython import VideosSearch
 
 def get_quote():
     response = requests.get("https://zenquotes.io/api/random")
-    #response = requests.get\
-    #(
-    #    'https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&format=txt'
-    #)
     json_data = json.loads(response.text)
     quote = json_data[0]["q"] + " - " + json_data[0]["a"]  # fetching q&a from json format, h ignored
     return quote
